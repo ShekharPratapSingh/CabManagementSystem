@@ -1,3 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import'~bootstrap/dist/css/bootstrap.css';
-@import '~ngx-toastr/toastr';
+ /* @import'~bootstrap/dist/css/bootstrap.css'; */
+ @import '~ngx-toastr/toastr'; 
+ body{
+     background-image: url('https://images.unsplash.com/flagged/photo-1574711404867-763f76ce1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }

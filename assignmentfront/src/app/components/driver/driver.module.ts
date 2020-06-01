@@ -1,3 +1,4 @@
+
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 
@@ -8,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+
 
 const routes: Routes = [
     {
@@ -32,6 +34,7 @@ const routes: Routes = [
       CommonModule,
     FormsModule,
     ReactiveFormsModule
-  ]
+  ],
+  providers:[]
 })
 export class DriverModule { }

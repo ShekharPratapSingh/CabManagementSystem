@@ -1,4 +1,4 @@
-.card{
+/* .card{
     margin-top: 9rem !important;
 }
 .btn{
@@ -9,4 +9,16 @@ span{
 }
 .form-group a{
     font-size: 21px !important;  
+} */
+.submit-button a{
+    text-transform: capitalize;
+    /* font-size: 15px; */
+    font-weight: 700;
+    color: green;
+}
+
+.submit-button span{
+    text-transform: capitalize;
+    font-weight: 500;
+    color: black;
 }

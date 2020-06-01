@@ -1,19 +1,15 @@
-<header id="header" class="row">   
-
-    <div class="header-logo">
-     <a href="index.html">Dazzle</a>
- </div>
-
-    <nav id="header-nav-wrap">
-     <ul class="header-main-nav">
-         <li class="current"><a class="smoothscroll" routerLink='/home' >Home</a></li>
-         <li><a class="smoothscroll" routerLink='/admin'>Admin</a></li>
-       
-         <li><a class="smoothscroll"  routerLink='/driver' >Driver</a></li>
-        	
-     </ul>
- </nav>
-
- <a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
-
-</header>
+<header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Cab Duniya</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" routerLink='/home'>Home</a>
+        <a class="mr-5 hover:text-gray-900" routerLink='/driver'>Driver</a>
+        <a class="mr-5 hover:text-gray-900" routerLink='/Admin'>Admin</a>
+      </nav>
+    </div>
+  </header>

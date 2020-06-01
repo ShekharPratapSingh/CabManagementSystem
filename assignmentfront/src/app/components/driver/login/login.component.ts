@@ -2,7 +2,6 @@ import { ConnectService } from './../../../services/connect.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm, FormGroup, FormBuilder, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
-import { BackendService } from '../../../services/backend.service';
 import { ToastrService } from 'ngx-toastr';
 
 
@@ -19,7 +18,7 @@ export class LoginComponent implements OnInit {
   phonenumber;
   constructor(
     private fb: FormBuilder,
-    private nodeservice: BackendService,
+  
     private router: Router,
     private toastr: ToastrService,
     private connect:ConnectService
@@ -33,30 +32,30 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  login(account) {
-    this.nodeservice.getEmployees().subscribe(emp => {
-      emp.map(data => {
-        this.emps.push(data.phonenumber)
-        this.emps.forEach(element => {
-          if (element === account.value.phonenumber) {
-            this.datas.push(data)
-            this.toastr.success('Sucessfully logged in')
-            this.router.navigate(['/driver/profile']);
-            this.connect.myMethod(this.datas)
-            console.log(this.datas);
+  // login(account) {
+  //   this.nodeservice.getEmployees().subscribe(emp => {
+  //     emp.map(data => {
+  //       this.emps.push(data.phonenumber)
+  //       this.emps.forEach(element => {
+  //         if (element === account.value.phonenumber) {
+  //           this.datas.push(data)
+  //           this.toastr.success('Sucessfully logged in')
+  //           this.router.navigate(['/driver/profile']);
+  //           this.connect.myMethod(this.datas)
+  //           console.log(this.datas);
             
-          } else {
-            this.router.navigate(['/driver/login']);
-            this.toastr.warning('Enter valid Unique Number')
+  //         } else {
+  //           this.router.navigate(['/driver/login']);
+  //           this.toastr.warning('Enter valid Unique Number')
            
-          }
+  //         }
           
          
-        })
-      })
-      console.log(account.value)
+  //       })
+  //     })
+  //     console.log(account.value)
     
 
-    }) }
+  //   }) }
  
 }

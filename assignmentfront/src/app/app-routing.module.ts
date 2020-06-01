@@ -8,7 +8,6 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {path:'', redirectTo:'home',pathMatch:'full'},
   { path: 'home', component: HomeComponent },
-  { path: 'admin', loadChildren:()=>import('./components/admin/admin.module').then(m=>m.AdminModule) },
   { path: 'driver', loadChildren:()=>import('./components/driver/driver.module').then(m=>m.DriverModule) },
 ];
 
